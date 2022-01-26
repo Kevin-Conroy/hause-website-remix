@@ -25,5 +25,9 @@ function getNews() {
             
             Over the next weeks and months, I am so stoked to tell you all about the making of the record, introduce you to the amazing people who played it with me, but most of all, share this music with you as we are so proud of it.`,
     },
+    {
+      title: "EUROPEAN TOUR POSTPONED",
+      body: `Unfortunately we had to move our tour to September.`
+    }
   ];
 }

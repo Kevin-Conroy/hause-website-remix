@@ -3,7 +3,7 @@ import { db } from '~/utils/db.server'
 
 export const loader = async () => {
   const data = {
-    posts: await db.hausenews.findMany({
+    hausenews: await db.hausenews.findMany({
         take: 10,
         select: {id: true, title: true }
     })
@@ -13,7 +13,7 @@ export const loader = async () => {
 
 function NewsItems() {
   const {hausenews} = useLoaderData();
-  
+
   return (
     <>
       <div className="page-header">
