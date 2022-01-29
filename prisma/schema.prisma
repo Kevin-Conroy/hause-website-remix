@@ -15,3 +15,14 @@ model hausenews {
   title String
   body String
 }
+
+model archive {
+  id   String  @id @default(uuid())
+  month String
+  day String
+  year Int
+  venue String
+  city String
+  state String
+  setlist String
+}

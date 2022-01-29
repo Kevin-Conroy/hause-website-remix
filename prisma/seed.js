@@ -3,8 +3,8 @@ const db = new PrismaClient();
 
 async function seed() {
   await Promise.all(
-    getNews().map((newsItem) => {
-      return db.hausenews.create({ data: newsItem });
+    getArchive().map((archiveDate) => {
+      return db.archive.create({ data: archiveDate });
     })
   );
 }
@@ -30,4 +30,40 @@ function getNews() {
       body: `Unfortunately we had to move our tour to September.`
     }
   ];
+}
+
+
+function getArchive() {
+  return [
+    {
+      month: "Febraury",
+      day: "2nd",
+      year: 2017,
+      venue: "Gloria",
+      city: "Cologne",
+      state: "GE",
+      setlist: `With You, We Could Be Kings, C'Mon Kid`
+
+    },
+    {
+      month: "July",
+      day: "30th",
+      year: 2019,
+      venue: "Camden Waterfront",
+      city: "Camden",
+      state: "NJ",
+      setlist: `Saboteurs, Melanin, With You`
+    },
+    {
+      month: "March",
+      day: "3rd",
+      year: 2020,
+      venue: "Lee's Palace",
+      city: "Toronto",
+      state: "ONT",
+      setlist: `OMG, Resolutions, The Great Depression`
+
+    }
+  ]
+  
 }
