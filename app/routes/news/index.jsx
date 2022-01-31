@@ -1,18 +1,18 @@
 import { useLoaderData, Link } from "remix";
-import { db } from '~/utils/db.server'
+import { db } from "~/utils/db.server";
 
 export const loader = async () => {
   const data = {
     hausenews: await db.hausenews.findMany({
-        take: 10,
-        select: {id: true, title: true }
-    })
+      take: 10,
+      select: { id: true, title: true },
+    }),
   };
   return data;
 };
 
 function NewsItems() {
-  const {hausenews} = useLoaderData();
+  const { hausenews } = useLoaderData();
 
   return (
     <>
@@ -22,11 +22,13 @@ function NewsItems() {
 
       <ul className="post-list">
         {hausenews.map((newsItem) => (
-          <li key={newsItem.id}>
-            <Link to={newsItem.id}>
-              <h3>{newsItem.title}</h3>
-            </Link>
-          </li>
+          <div className="box">
+            <li key={newsItem.id}>
+              <Link to={newsItem.id}>
+                <h3>{newsItem.title}</h3>
+              </Link>
+            </li>
+          </div>
         ))}
       </ul>
     </>

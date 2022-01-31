@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -7,9 +10,25 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-image: url('public/DH-BH-COVER.jpg');
 }
-
+/*
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 500;
+  background: url("public/DH-BH-COVER.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+*/
 a {
   text-decoration: none;
   color: #000;
@@ -24,13 +43,13 @@ p {
 }
 
 .box {
-    border: 1px solid black;
-    outline: rgb(2, 31, 2) solid 2px;
-    margin: 20px;
-    padding: 5px;
-    text-align: center;
-    animation: fadeIn 2s;
-  }
+  border: 1px solid black;
+  outline: rgb(2, 31, 2) solid 2px;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  animation: fadeIn 2s;
+}
 
 .container {
   width: 100%;
@@ -49,7 +68,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  background-color: #f4f4f4;
+  background-color: rgb(91, 116, 96);
   padding: 10px 30px;
   text-transform: uppercase;
 }
@@ -65,14 +84,14 @@ p {
 }
 
 .navbar ul li a {
-  color: #000;
+  color: #f4f4f4;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
 }
 
 .navbar ul li a:hover {
-  color: #333;
+  color: rgb(148, 148, 148);
   border-bottom: 1px solid #333;
 }
 
@@ -132,34 +151,34 @@ p {
 }
 
 .social-container {
-    background: #eee;
-    padding: 25px 50px;
-  }
-  a.social {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-  }
-  
-  a.social:hover {
-    transform: translateY(-2px);
-  }
-  
-  a.youtube {
-    color: #eb3223;
-  }
-  
-  a.facebook {
-    color: #4968ad;
-  }
-  
-  a.twitter {
-    color: #49a1eb;
-  }
-  
-  a.instagram {
-    color: rgba(82, 77, 12, 0.685);
-  }
+  background: #eee;
+  padding: 25px 50px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: rgba(82, 77, 12, 0.685);
+}
 
 .form-control {
   margin: 20px 0;
