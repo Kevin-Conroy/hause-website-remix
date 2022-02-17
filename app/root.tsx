@@ -1,6 +1,7 @@
 import { Outlet, LiveReload, Link, Links, Meta } from "remix";
 import globalStylesUrl from "~/styles/global.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { Nav, Navbar } from "react-bootstrap";
 
 export const links = () => [{ rel: "stylesheet", href: globalStylesUrl }];
 
@@ -45,11 +46,20 @@ function Document({ children, title }) {
 function Layout({ children }) {
   return (
     <>
-      <nav className="navbar">
+        <Navbar
+        bg="NavBar"
+        variant="dark"
+        sticky="top"
+        expand="lg"
+      >
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+        <nav className="navbar">
         <Link to="/" className="logo">
           Dave Hause
         </Link>
         <ul className="nav">
+          <li></li>
           <li>
             <Link to="/News">News</Link>
           </li>
@@ -60,7 +70,7 @@ function Layout({ children }) {
             <Link to="/Bio">Bio</Link>
           </li>
           <li>
-            <Link to="/Store">Store</Link>
+            <a href="https://store.davehause.com/">Store</a>
           </li>
           <li>
             <Link to="/Releases">Releases</Link>
@@ -73,6 +83,8 @@ function Layout({ children }) {
           </li>
         </ul>
       </nav>
+        </Navbar.Collapse>
+        </Navbar>
       <div className="container">{children}</div>
       <div>
         
@@ -80,3 +92,35 @@ function Layout({ children }) {
     </>
   );
 }
+
+
+/*
+<Link to="/" className="logo">
+          Dave Hause
+        </Link>
+        <ul className="nav">
+          <li></li>
+          <li>
+            <Link to="/News">News</Link>
+          </li>
+          <li>
+            <Link to="/TourDates">Tour Dates</Link>
+          </li>
+          <li>
+            <Link to="/Bio">Bio</Link>
+          </li>
+          <li>
+            <a href="https://store.davehause.com/">Store</a>
+          </li>
+          <li>
+            <Link to="/Releases">Releases</Link>
+          </li>
+          <li>
+            <Link to="/Archive">Archive</Link>
+          </li>
+          <li>
+            <Link to="/SocialFollow">Follow</Link>
+          </li>
+        </ul>
+
+        */

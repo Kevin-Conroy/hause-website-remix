@@ -1,7 +1,9 @@
 function Bio() {
     return (
         <div>
-            <h1>About</h1>
+            <h1 className="page-header">About</h1>
+      
+            <div className="bio-box">
             <p>
             On a base level, the term 'blood harmony' is simple—it describes the
           specific sound two siblings make when they sing together. Given that
@@ -102,6 +104,7 @@ function Bio() {
           heart at the center of these songs—mean to him. It's a truly beautiful
           thing.
             </p>
+            </div>
         </div>
     )
 }

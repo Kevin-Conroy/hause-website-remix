@@ -30,14 +30,14 @@ function Home() {
   const { hausenews } = useLoaderData();
 
   return (
-    <>
+    <main>
       <div className="page-header">
         <h1>The Latest</h1>
       </div>
 
-      <ul className="post-list">
+      <ul className="group">
         {hausenews.map((newsItem) => (
-          <div className="box">
+          <div className="rcorners1">
             <li key={newsItem.id}>
               <Link to={newsItem.id}>
                 <h3>{newsItem.title}</h3>
@@ -46,7 +46,7 @@ function Home() {
           </div>
         ))}
       </ul>
-    </>
+    </main>
   );
 }
 

@@ -20,9 +20,9 @@ function NewsItems() {
         <h1>News</h1>
       </div>
 
-      <ul className="post-list">
+      <ul className="group">
         {hausenews.map((newsItem) => (
-          <div className="box">
+          <div className="rcorners1">
             <li key={newsItem.id}>
               <Link to={newsItem.id}>
                 <h3>{newsItem.title}</h3>
