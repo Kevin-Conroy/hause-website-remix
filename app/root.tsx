@@ -3,7 +3,14 @@ import globalStylesUrl from "~/styles/global.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Nav, Navbar } from "react-bootstrap";
 
-export const links = () => [{ rel: "stylesheet", href: globalStylesUrl }];
+//export const links = () => [{ rel: "stylesheet", href: globalStylesUrl }];
+
+import styles from "~/styles/tailwind.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }, { rel: "stylesheet", href: globalStylesUrl}];
+}
+
 
 export const meta = () => {
   const description = "Dave Hause official website";
