@@ -1,0 +1,163 @@
+{
+  "version": "2b8054ca",
+  "entry": {
+    "module": "/build/entry.client-R2X5PBNQ.js",
+    "imports": [
+      "/build/_shared/chunk-V67H6755.js",
+      "/build/_shared/chunk-77RVGB3Y.js",
+      "/build/_shared/chunk-YTGA4KPU.js"
+    ]
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "module": "/build/root-DFAQAZKE.js",
+      "imports": [
+        "/build/_shared/chunk-QC6ZTPMN.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/archive/$archiveDateId": {
+      "id": "routes/archive/$archiveDateId",
+      "parentId": "root",
+      "path": "archive/:archiveDateId",
+      "module": "/build/routes/archive/$archiveDateId-JRTSI5ZS.js",
+      "imports": [
+        "/build/_shared/chunk-ZSDV443X.js"
+      ],
+      "hasAction": false,
+      "hasLoader": true,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/archive/archive": {
+      "id": "routes/archive/archive",
+      "parentId": "root",
+      "path": "archive/archive",
+      "module": "/build/routes/archive/archive-NT7XII3U.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/archive/index": {
+      "id": "routes/archive/index",
+      "parentId": "root",
+      "path": "archive",
+      "index": true,
+      "module": "/build/routes/archive/index-VKINRDV6.js",
+      "imports": [
+        "/build/_shared/chunk-ZSDV443X.js"
+      ],
+      "hasAction": false,
+      "hasLoader": true,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/bio": {
+      "id": "routes/bio",
+      "parentId": "root",
+      "path": "bio",
+      "module": "/build/routes/bio-BJG7Q32Q.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/index": {
+      "id": "routes/index",
+      "parentId": "root",
+      "index": true,
+      "module": "/build/routes/index-FX4OYTKS.js",
+      "imports": [
+        "/build/_shared/chunk-ZSDV443X.js"
+      ],
+      "hasAction": false,
+      "hasLoader": true,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/news/$newsItemId": {
+      "id": "routes/news/$newsItemId",
+      "parentId": "root",
+      "path": "news/:newsItemId",
+      "module": "/build/routes/news/$newsItemId-AWYFOX4U.js",
+      "imports": [
+        "/build/_shared/chunk-ZSDV443X.js"
+      ],
+      "hasAction": false,
+      "hasLoader": true,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/news/index": {
+      "id": "routes/news/index",
+      "parentId": "root",
+      "path": "news",
+      "index": true,
+      "module": "/build/routes/news/index-3D6QXSVU.js",
+      "imports": [
+        "/build/_shared/chunk-ZSDV443X.js"
+      ],
+      "hasAction": false,
+      "hasLoader": true,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/news/news": {
+      "id": "routes/news/news",
+      "parentId": "root",
+      "path": "news/news",
+      "module": "/build/routes/news/news-TNWTBNEY.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/releases": {
+      "id": "routes/releases",
+      "parentId": "root",
+      "path": "releases",
+      "module": "/build/routes/releases-KIDIBJJ5.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/socialfollow": {
+      "id": "routes/socialfollow",
+      "parentId": "root",
+      "path": "socialfollow",
+      "module": "/build/routes/socialfollow-JXDTKTF5.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/store": {
+      "id": "routes/store",
+      "parentId": "root",
+      "path": "store",
+      "module": "/build/routes/store-TTYMPNIS.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/tourdates": {
+      "id": "routes/tourdates",
+      "parentId": "root",
+      "path": "tourdates",
+      "module": "/build/routes/tourdates-WP3RSVAA.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    }
+  },
+  "url": "/build/manifest-2B8054CA.js"
+}

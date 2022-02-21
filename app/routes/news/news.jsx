@@ -2,7 +2,7 @@ import { Outlet } from 'remix'
 
 function News () {
     return (
-        <div class="text-5xl">
+        <div>
         <h1>News</h1>
         <Outlet />
         </div>
@@ -10,4 +10,3 @@ function News () {
 }
 
 export default News
-I 

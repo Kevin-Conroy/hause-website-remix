@@ -17,7 +17,7 @@ function NewsItems() {
   return (
     <>
       <div className="page-header">
-        <h1>News</h1>
+        <h1  className="lg:text-5xl">News</h1>
       </div>
 
       <ul className="group">

@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 * {
   box-sizing: border-box;
@@ -77,11 +73,11 @@ a {
   text-decoration: none;
   color: #000;
 }
-/*
+
 ul {
   list-style: none;
 }
-*/
+
 p {
   margin: 20px 20;
   font-weight: bold;
@@ -138,7 +134,7 @@ p {
   font-size: x-large;
   text-transform: uppercase;
 }
-/*
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -170,7 +166,7 @@ p {
   color: rgb(148, 148, 148);
   border-bottom: 1px solid #333;
 }
-*/
+
 .btn {
   display: inline-block;
   background: #000;

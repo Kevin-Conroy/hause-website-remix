@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 * {
   box-sizing: border-box;
@@ -15,47 +11,8 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-image: url('/DH-BH-COVER.jpg');
-  background-size: cover;
-}
-
-.homepage {
-  font-family: "Raleway", sans-serif;
   
-  background-size: cover;
-}
-
-.fade-in-text {
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150px;
-  color: black;
-
-}
-.navbar .navbar-nav .nav-link {
-  color: #000000;
-  font-size: 1.1em;
-}
-.navbar .navbar-nav .nav-link:hover{
-  color: #808080;
-}
-.sm-icons {
-flex-direction: row;
-}
-@media only screen and (max-width: 960px) {
-.sm-icons .nav-item {
-  padding-right: 1em;
-}
-}
-
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  background-image: url('public/DH-BH-COVER.jpg');
 }
 /*
 .App {
@@ -77,54 +34,22 @@ a {
   text-decoration: none;
   color: #000;
 }
-/*
+
 ul {
   list-style: none;
 }
-*/
+
 p {
-  margin: 20px 20;
-  font-weight: bold;
+  margin: 10px 0;
 }
-
-
 
 .box {
-  border-radius: 25px;
-  border: 1px solid rgb(5, 46, 14);
-  outline: rgb(2, 31, 2) solid 2px;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  animation: fadeIn .5s;
-}
-
-.bio-box {
   border: 1px solid black;
   outline: rgb(2, 31, 2) solid 2px;
   margin: 20px;
   padding: 5px;
   text-align: center;
-  background-color: #f4f4f4;
-  animation: fadeIn .8s;
-  
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-.rcorners1 {
-  border-radius: 25px;
-  background: #b5c4a0;
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  animation: fadeIn .8s;
+  animation: fadeIn 2s;
 }
 
 .container {
@@ -135,16 +60,17 @@ p {
 }
 
 .logo {
+  color:#f4f4f4
   font-size: x-large;
   text-transform: uppercase;
 }
-/*
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  background-color: rgb(91, 116, 96);
+  background-color: #000;
   padding: 10px 30px;
   text-transform: uppercase;
 }
@@ -170,7 +96,7 @@ p {
   color: rgb(148, 148, 148);
   border-bottom: 1px solid #333;
 }
-*/
+
 .btn {
   display: inline-block;
   background: #000;
@@ -213,8 +139,8 @@ p {
 }
 
 .page-header {
-
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -225,7 +151,7 @@ p {
   align-items: center;
   margin-top: 30px;
 }
-/*
+
 .social-container {
   background: #eee;
   padding: 25px 50px;
@@ -254,35 +180,6 @@ a.twitter {
 
 a.instagram {
   color: rgba(82, 77, 12, 0.685);
-}
-*/
-.social-container {
-  padding: 25px 50px;
-}
-a.social {
-  margin: 0 1rem;
-  transition: transform 250ms;
-  display: inline-block;
-}
-
-a.social:hover {
-  transform: translateY(-2px);
-}
-
-a.youtube {
-  color: #eb3223;
-}
-
-a.facebook {
-  color: #4968ad;
-}
-
-a.twitter {
-  color: #49a1eb;
-}
-
-a.instagram {
-  color: black;
 }
 
 .form-control {
@@ -363,9 +260,4 @@ a.instagram {
 
 .auth-container fieldset label {
   margin-right: 10px;
-}
-
-.group {
-  display: flex;
-  flex-direction: row;
 }
